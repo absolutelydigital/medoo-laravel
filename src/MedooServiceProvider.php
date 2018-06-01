@@ -20,7 +20,7 @@ class MedooServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerHelper();
-        $this->app->alias('medoo', 'catfan\medoo');
+        $this->app->alias('medoo', 'absolutelydigital\medoo');
     }
     /**
      * Register the Goutte instance.
@@ -64,7 +64,7 @@ class MedooServiceProvider extends ServiceProvider
                 $options['prefix'] = $prefix;
             }
 
-            return new \catfan\medoo($options);
+            return new \absolutelydigital\medoo($options);
         });
     }
     /**
