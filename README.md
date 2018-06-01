@@ -7,18 +7,18 @@ It uses the `default` connection.
 ### Installation
 1. Install the package
 
-`composer require repat/laravel-medoo`
+`composer require absolutelydigital/medoo-laravel`
 
-2. Add the Service Provider to the providers array in `app/config/app.php`
+1. Add the Service Provider to the providers array in `config/app.php`
 
 ```php
-repat\LaravelMedoo\MedooServiceProvider::class,
+absolutelydigital\LaravelMedoo\MedooServiceProvider::class,
 ```
 
-3. Add alias in `app/config/app.php`
+1. Add alias in `config/app.php`
 
 ```php
-'Medoo'            => repat\LaravelMedoo\MedooFacade::class,
+'Medoo'            => absolutelydigital\LaravelMedoo\MedooFacade::class,
 ```
 
 ### Usage
@@ -31,7 +31,6 @@ See [official medoo documentation](http://medoo.in/doc) for more.
 
 ---
 
-![](https://raw.githubusercontent.com/catfan/Medoo/develop/src/medoo-logo.png)
 
 ## [Medoo](http://medoo.in)
 
@@ -57,7 +56,7 @@ See [official medoo documentation](http://medoo.in/doc) for more.
 
 Add Medoo to composer.json configuration file.
 ```
-$ composer require catfan/Medoo
+$ composer require absolutelydigital/Medoo
 ```
 
 And update the composer
@@ -94,10 +93,6 @@ $database->insert('account', [
 ## Contribution Guides
 
 For most of time, Medoo is using develop branch for adding feature and fixing bug, and the branch will be merged into master branch while releasing a public version. For contribution, submit your code to the develop branch, and start a pull request into it.
-
-On develop branch, each commits are started with `[fix]`, `[feature]` or `[update]` tag to indicate the change.
-
-Keep it simple and keep it clear.
 
 ## License
 
